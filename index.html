@@ -9,35 +9,76 @@
     <!-- tailwind and daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!--  google font -->
+
+    <!-- Roboto google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+   
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+   
     <!-- tailwind custom color -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'gradient-start': '#FF8938',
-                        'gradient-end': '#F00',
+                        'common-color': '#F85559',
+                        
                     }
                 }
             }
         }
     </script>
+    
     <style>
-        .font-manrope {
-            font-family: 'Manrope', sans-serif;
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
         }
     </style>
 
 </head>
 
-<body>
+<body class="m-0 p-0">
+     <header>
+          <!--Navbar section-->
+          <section class="mx-5  md:mx-10 lg:mx-20 my-8 ">
+              <div>
+                <div class="navbar bg-common-color rounded-full text-white">
+                    <div class="flex gap-5 ml-5">
+                        <p>Home</p>
+                        <p>Aboute Us</p>
+                        <p>Shop</p>
+                        <p>All Fruits</p>
+                    </div>
+                    <div class="flex-1 justify-center">
+                        <div class="flex items-center">
+                            <img src="./images/logo.png" alt="">
+                            <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+                          </div>
+                    </div>
+                    <div class="flex-none">
+                      <div class=" ">
+                        <input type="text" placeholder="Search here" class="input input-bordered w-24 h-10 md:w-auto rounded-full mr-5" />
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </section>
+          
+     </header>
 
+     <main>
+          
+       
+
+     </main>
+      
+     <footer>
+
+
+     </footer>
 </body>
 
 </html>
